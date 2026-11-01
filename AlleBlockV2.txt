@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.23
+! Version: 2026.23b
 ! Date: 2026/11/01
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
@@ -331,8 +331,12 @@ allegrolokalnie.pl##div[data-box-name="lokalnie.errorState"] > div > div > div._
 allegrolokalnie.pl##article:has(a[href*="play.google.com"])
 
 ! AI slop
+!#if (!env_chromium)
+allegrolokalnie.pl^$replace=/"aiContentGenerationEnabled":true/"aiContentGenerationEnabled":false/i
+!#else
 allegrolokalnie.pl##._d94de_sMD48
 allegrolokalnie.pl##._d94de_y-Sr4
+!#endif
 
 !---------------------------------------------------------------------------------
 
@@ -420,6 +424,7 @@ olx.*##+js(set, window.scrollTo, noopFunc)
 vinted.*##+js(set-cookie, is_shipping_fees_applied_info_banner_dismissed, true)
 vinted.*##+js(set-local-storage-item, search_by_image_interacted_count, 2)
 vinted.*##div[class^="_ads-module"][data-testid="slot-container"]
+vinted.*##div[class*="_slotContainer"]
 vinted.*##.sidebar-container
 vinted.*##div[data-testid^="closet-promotion"]
 
