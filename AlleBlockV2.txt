@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.24
+! Version: 2026.24b
 ! Date: 2026/11/17
 ! Expires: 1 days
-! Homepage: https://github.com/CrusheerPL/AlleBlockV2
+! Homepage: https://github.com/crpl21/AlleBlockV2
 
 ! Aktualizowana na bieżąco lista filtrów dla uBO/AdGuard mająca na celu zwiększenie komfortu korzystania z platform Allegro, OLX i innych poprzez ukrycie lub dezaktywację elementów zbędnych bądź irytujących.
 
-! [EN] NOTE: If you see any elements which should be hidden or blocked, or something does not work, please report it there: https://github.com/CrusheerPL/AlleBlockV2/issues
-! [PL] UWAGA: Jeśli zauważysz element(y), które powinny zostać ukryte, bądź gdy poniższe filtry nie działają poprawnie, daj znać na GitHubie: https://github.com/CrusheerPL/AlleBlockV2/issues
+! [EN] NOTE: If you see any elements which should be hidden or blocked, or something does not work, please report it there: https://github.com/crpl21/AlleBlockV2/issues
+! [PL] UWAGA: Jeśli zauważysz element(y), które powinny zostać ukryte, bądź gdy poniższe filtry nie działają poprawnie, daj znać na GitHubie: https://github.com/crpl21/AlleBlockV2/issues
 
 ! To be cleaned up from non-effective rules.
 
@@ -239,7 +239,7 @@ allegro.pl##div[data-box-name="lista-opony1m"] > div > div > a:remove-attr(style
 allegro.pl##main[aria-label*="lubion"] > div > div:nth-of-type(3):style(margin-top: 16px !important)
 
 ! ai slop
-allegro.pl##div[data-box-name^="allegro.chatbotAssistant"]
+allegro.pl##[data-box-name*="chatbotAssistant"]
 allegro.pl##div.opbox-listing > div > ul > li:has(source[srcset*="artificial"])
 allegro.pl##div[data-testid="partial-optimization-content"]
 allegro.pl##div[data-testid="optimizer-content"]
@@ -248,6 +248,11 @@ allegro.pl##div[data-box-name="Upsell Container"]
 allegro.pl##div[data-box-name^="allegro.ask.on.page.container"]
 allegro.pl##div[data-box-name^="ask on page - analytical pixel"]
 allegro.pl##div[data-analytics-view-label="mySmartManagerTopBanner"]
+allegro.pl##li:has(a[href$="/asystent"])
+!#if (!env_chromium)
+allegro.pl^$replace=/"chatConfiguration":{"enabled":true}/"chatConfiguration":{"enabled":false}/i
+allegro.pl^$replace=/"with-assistant-side-panel","enabled":true,"staticScriptUrl"/"with-assistant-side-panel","enabled":false,"staticScriptUrl":"noop.js","aiSlop"/i
+!#endif
 !     elementy zawierające grafiki wygenerowane/zmodyfikowane przez ai, lista takowych z czasem może się powiększyć
 allegro.pl##div[data-box-name="allegro.allegroPayAdsCarousel"]
 
