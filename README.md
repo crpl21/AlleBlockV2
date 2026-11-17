@@ -4,6 +4,14 @@
 <p align="center">Do skutecznego działania listy zalecana jest wtyczka uBlock Origin lub AdGuard; wbudowany bloker reklam przeglądarki Brave również powinien sobie poradzić.</p>
 <p align="center">Jeśli zauważyłeś/aś element do ukrycia/zablokowania, bądź gdy filtry nie działają poprawnie, <a href="https://github.com/crpl21/AlleBlockV2/issues">daj znać - za każde zgłoszenie serdecznie dziękuję.</a></p>
 
+<p align="center"><b>UWAGA: funkcje AI będą skutecznie dezaktywowane przy użyciu tej listy wyłącznie z przeglądarką Firefox+uBO pod warunkiem dodania jej do "zaufanych"</b> (nie wiem na ten moment jak temat wygląda z AdGuardem ale odpowiedni poradnik powinien się dać znaleźć):</p>
+<ul>
+  <li>Otwórz panel sterowania uBO</li>
+  <li>W zakładce <code>Ustawienia</code> na samym dole zaznacz <code>Jestem zaawansowanym użytkownikiem</code> i kliknij w trybiki obok po prawej</li>
+  <li>Otworzy się nowa karta, tam znajdź linijkę zaczynającą się od <code>trustedListPrefixes</code> i na jej końcu zrób spację i wklej to:</li><code>https://raw.githubusercontent.com/crpl21/AlleBlockV2/</code>
+  <li>Aby zapisać, kliknij przycisk <code>Zastosuj zmiany</code>.</li>
+</ul>
+
 <hr>
 
 <p align="center">The freshest uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, Vinted, etc. platforms by hiding or deactivating vastly most of their annoyances (including ai-generated slop). Derived from the @maciejtarmas' <a href="https://github.com/maciejtarmas/AlleBlock"><i>AlleBlock</i> project</a>.</p>
