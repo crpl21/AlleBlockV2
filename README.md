@@ -11,7 +11,9 @@
   <li>W zakładce <code>Ustawienia</code> na samym dole zaznacz <code>Jestem zaawansowanym użytkownikiem</code> i kliknij w trybiki obok po prawej</li>
   <li>Otworzy się nowa karta, tam znajdź linijkę zaczynającą się od <code>trustedListPrefixes</code> i na jej końcu zrób spację i wklej to:</li><code>https://raw.githubusercontent.com/crpl21/AlleBlockV2/</code>
   <li>Aby zapisać, kliknij przycisk <code>Zastosuj zmiany</code>.</li>
+  <li>Nie działa? Zaimportuj ponownie listę wklejając poniższy link (dotychczas używaną usuń):</li>
 </ul>
+<h3 align="center">https://raw.githubusercontent.com/crpl21/AlleBlockV2/refs/heads/master/AlleBlockV2.txt</h3>
 
 <hr>
 
