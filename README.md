@@ -4,7 +4,7 @@
 <p align="center">Do skutecznego działania listy zalecana jest wtyczka uBlock Origin lub AdGuard; wbudowany bloker reklam przeglądarki Brave również powinien sobie poradzić.</p>
 <p align="center">Jeśli zauważyłeś/aś element do ukrycia/zablokowania, bądź gdy filtry nie działają poprawnie, <a href="https://github.com/crpl21/AlleBlockV2/issues">daj znać - za każde zgłoszenie serdecznie dziękuję.</a></p>
 
-<p align="center"><b>UWAGA: funkcje AI będą skutecznie dezaktywowane przy użyciu tej listy wyłącznie z przeglądarką Firefox+uBO pod warunkiem dodania jej do "zaufanych"</b> (nie wiem na ten moment jak temat wygląda z AdGuardem ale odpowiedni poradnik powinien się dać znaleźć):</p>
+<p align="center"><b>UWAGA: funkcje AI będą skutecznie dezaktywowane przy użyciu tej listy wyłącznie z przeglądarką Firefox pod warunkiem dodania jej do "zaufanych" - w przypadku AdGuarda wystarczy zaznaczyć odpowiedniego checkboxa przy dodawaniu tej listy, natomiast jeśli chodzi o uBlocka Origin należy postąpić zgodnie z poniższą instrukcją:</b></p>
 <ul>
   <li>Otwórz panel sterowania uBO</li>
   <li>W zakładce <code>Ustawienia</code> na samym dole zaznacz <code>Jestem zaawansowanym użytkownikiem</code> i kliknij w trybiki obok po prawej</li>
